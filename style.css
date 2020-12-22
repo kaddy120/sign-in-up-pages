@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --primary-color: rgb(42, 145, 241);
+    --secondary-color: rgb(17, 62, 104);
+    --dark-color: rgb(17, 17, 17);
+    --grey-color: #a1a1a1;
+    --light-color: rgb(247, 244, 244);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: rgb(241, 241, 241);
+}
+
+/* nav */
+
+.nav-container{
+    height: 60px;
+    /* background-color: var(--secondary-color); */
+    border-bottom: 1px solid var(--grey-color);
+}
+nav{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    height: 100%;
+}
+
+nav ul{
+    display: flex;
+    flex: 2;
+}
+
+nav>*{
+   margin: auto 10px;
+}
+
+nav .search-section{
+    flex: 3;
+}
+
+nav .btn{
+    display: inline-block;
+    width: 100px;
+    border-radius: 0;
+}
+
+nav .search-section input[id='search']{
+      margin-left: 20px;
+      height: 27px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color: var(--primary-color);
+}
+
+
+/* nav form{
+    max-width: 600px;
+} */
+input[id="search"]{
+    width: 75%;
+}
+
+nav li{
+   margin: auto 5px;
+   list-style: none;
+}
+/* form */
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 350px;
+    margin: auto;
+}
+
+.form-container>*
+{
+    width: 90%;
+    align-items: center;
+}
+
+.sign-up p, 
+.sign-up a{
+ font-size: 14px;
+}
+
+.sign-up p>a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.form-controler{
+    padding-bottom: 20px;
+}
+
+.form-controler input{
+    width: 100%;
+}
+
+.form-container .head{
+    font-size: larger;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+.form-controler input, select{
+    color: var(--dark-color);
+    padding: 3px 6px;
+    font-size: medium;
+    border: 1px solid var(--grey-color);
+    border-radius: 6px;
+}
+
+input:focus{
+        outline: none !important;
+        border: 1px solid rgb(6, 111, 231);
+        box-shadow: 0 0 6px #719ECE;
+}
+
+/* social sign-in */
+.social-card{
+    margin-top: 5px;
+}
+.social-card p{
+    text-align: center;
+}
+
+.social-card i{
+    padding-right: 10px;
+}
+
+.social-card a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark-color);
+    font-size: 14px;
+}
+
+.social-card a:hover{
+    color: var(--primary-color)
+}
+
+
+/* Utilities */
+.center-text{
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: medium;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.btn:hover{
+   transform: scale(0.98);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+  }
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* footer */
+
+.footer{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    margin: auto;
+    /* margin-top: 20px; */
+}
+
+.footer-container{
+    background-color: var(--secondary-color);
+}
+
+.footer ul,
+.footer div{
+    padding: 20px;
+    list-style: none;
+}
+
+.footer a, 
+.footer i{
+    color: var(--light-color);
+    padding: 0 10px;
+    text-decoration: none;
+    
+}
+
+/* or */
+.or p {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ .or span { 
+    background: rgb(241, 241, 241); 
+     padding:0 10px; 
+ }
+
+ /* htjktl */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;   
+}
+
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    color: var(--dark-color);
+}
+/* Backgrounds nd colored btns */
+.bg-primary, .btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary, 
+.btn-secondary{
+    background-color: var(--seconary-color);
+    color: #fff;
+}
+
+.bg-dark, 
+.btn-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+/* Text size */
+/* .lead{
+    font-size: 20px;
+} */
+
+.sm{
+    font-size: 1rem;
+}
+.md{
+    font-size: 2rem;
+}
+.lg{
+    font-size: 3rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
+
+/* margins */
+.my-1{
+    margin: 1rem 0;
+}
+
+.my-2{
+    margin: 1.5rem 0;
+}
+
+.my-3{
+    margin: 2rem 0;
+}
+
+.my-4{
+    margin: 3rem 0;
+}
+.my-5{
+    margin: 4rem 0;
+}
+
+.m-1{
+    margin: 1rem;
+}
+
+.m-2{
+    margin: 1.5rem;
+}
+
+.m-3{
+    margin: 2rem;
+}
+
+.m-4{
+    margin: 3rem;
+}
+.m-5{
+    margin: 4rem;
+}
+/* padding */
+.py-1{
+    padding: 1rem 0;
+}
+
+.py-2{
+    padding: 1.5rem 0;
+}
+
+.py-3{
+    padding: 2rem 0;
+}
+
+.py-4{
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 4rem 0;
+}
+
+.p-1{
+    padding: 1rem;
+}
+
+.p-2{
+    padding: 1.5rem;
+}
+
+.p-3{
+    padding: 2rem;
+}
+
+.p-4{
+    padding: 3rem;
+}
+.p-5{
+    padding: 4rem;
+}
