@@ -30,6 +30,7 @@ body{
     /* background-color: var(--secondary-color); */
     border-bottom: 1px solid var(--grey-color);
 }
+
 nav{
     display: flex;
     margin: auto 40px;
@@ -134,9 +135,10 @@ nav li{
     margin-bottom: 10px;
 }
 
-.form-controler input, select{
+
+input, select{
     color: var(--dark-color);
-    padding: 3px 6px;
+    padding: 9px 6px;
     font-size: medium;
     border: 1px solid var(--grey-color);
     border-radius: 6px;
@@ -210,7 +212,7 @@ input:focus{
 
 .footer{
     display: flex;
-    height: 70px;
+    height: 60px;
     justify-content: space-between;
     margin: auto;
     /* margin-top: 20px; */
